@@ -95,14 +95,6 @@ section.card {
     color: #244766;
 }
 
-small em {
-    font-size: 0.8rem;
-    display: flex;
-    text-align: left;
-    margin-top: 5px;
-    font-style: italic;
-    color: #666;
-}
 
 .card p {
     text-align: justify;
