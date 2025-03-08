@@ -1,0 +1,161 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #25557C;
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+nav {
+    background-color: #333333;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #a8dadc;
+}
+
+/* Main Content (CSS Grid Layout) */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+/* Card Styling */
+section.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.card h2 {
+    background-color: #244766;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    margin: -20px -20px 15px -20px;
+}
+
+.profile-photo {
+    float: right;
+    margin: 10px;
+    width: 130px;
+    height: 130px;
+    border-radius: 5px;
+}
+
+.flag-image {
+    width: 130px;
+    border-radius: 5px;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #244766;
+}
+
+small em {
+    font-size: 0.8rem;
+    display: flex;
+    text-align: left;
+    margin-top: 5px;
+    font-style: italic;
+    color: #666;
+}
+
+.card p {
+    text-align: justify;
+}
+.card ul {
+    align-self: center;
+}
+
+.country {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5px;
+    align-items: center;
+}
+
+.country p {
+    text-align: justify;
+    margin: 0;
+}
+
+.caption {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #666;
+    font-style: italic;
+    text-align: left;
+    align-items: ;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #244766;
+    color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer small,
+footer #lastModified {
+    color: #c1ff72;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
